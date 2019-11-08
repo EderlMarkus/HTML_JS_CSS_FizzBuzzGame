@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FizzBuzzGame</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="return mySubmitFunction(event)">
+      <div class="form-group">
+        <label for="FizzNummer">Fizz-Nummer</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="FizzNummer"
+          maxlength="1"
+          pattern="[0-9]"
+          aria-describedby="FizzNummerHelp"
+          placeholder="Nummer eingeben"
+        />
+        <small id="FizzNummerHelp" class="form-text text-muted"
+          >Bitte eine Zahl von 1-9 angeben.</small
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="BuzzNummer">Buzz-Nummer</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="BuzzNummer"
+          maxlength="1"
+          pattern="[0-9]"
+          aria-describedby="BuzzNummerHelp"
+          placeholder="Nummer eingeben"
+        />
+        <small id="BuzzNummerHelp" class="form-text text-muted"
+          >Bitte eine Zahl von 1-9 angeben.</small
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br />
+    <table></table>
+    <script src="script.js"></script>
+  </body>
+</html>
